@@ -46,46 +46,6 @@
 
 <hr>
 
-<h2>🔧 Instalação Local</h2>
-
-<p>Se você quiser rodar este projeto localmente, siga os passos abaixo:</p>
-
-<ol>
-  <li>Clone o repositório:
-    <pre><code>git clone https://github.com/seuusuario/seuportfolio.git</code></pre>
-  </li>
-  <li>Navegue até o diretório do projeto:
-    <pre><code>cd seuportfolio</code></pre>
-  </li>
-  <li>Instale as dependências:
-    <pre><code>npm install</code></pre>
-  </li>
-  <li>Execute o servidor de desenvolvimento:
-    <pre><code>npm run serve</code></pre>
-  </li>
-</ol>
-
-<p>O projeto será iniciado no endereço <code>http://localhost:8080</code>.</p>
-
-<hr>
-
-<h2>📂 Estrutura do Projeto</h2>
-
-<pre><code>
-.
-├── public/
-├── src/
-│   ├── assets/           # Arquivos de mídia (imagens, ícones, etc.)
-│   ├── components/       # Componentes Vue.js/React
-│   ├── views/            # Páginas e seções do portfólio
-│   ├── App.vue           # Componente principal (se Vue.js)
-│   └── main.js/ts        # Arquivo de entrada
-├── package.json          # Configuração do projeto e dependências
-└── README.md             # Este arquivo
-</code></pre>
-
-<hr>
-
 <h2>🛠 Melhorias Futuras</h2>
 
 <ul>
@@ -100,9 +60,9 @@
 
 <p>Se você deseja conversar sobre oportunidades de trabalho, colaborações ou apenas bater um papo sobre desenvolvimento, entre em contato:</p>
 <ul>
-  <li><strong>E-mail</strong>: meuexemplo@email.com</li>
-  <li><strong>LinkedIn</strong>: <a href="https://linkedin.com/in/meuexemplo" target="_blank">meulinkedin</a></li>
-  <li><strong>GitHub</strong>: <a href="https://github.com/meuexemplo" target="_blank">meugit</a></li>
+  <li><strong>E-mail</strong>: zeus.moreira111@gmail.com</li>
+  <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/zeus-moreira/" target="_blank">Meu Linkedin</a></li>
+  <li><strong>GitHub</strong>: <a href="https://github.com/ZeusMoreira" target="_blank">Meu GitHub</a></li>
 </ul>
 
 <hr>
@@ -114,5 +74,5 @@
 <hr>
 
 <h3>👨‍💻 Autor</h3>
-<p><strong>Seu Nome</strong><br>
+<p><strong>Zeus Moreira</strong><br>
 Desenvolvedor Frontend</p>
