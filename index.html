@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Portfólio Zeus Moreira</title>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <div class="wrapper-container wrapper-container-dark positioned">
+        <header class="header container">
+            <a href="#inicio" class="logo">ZM</a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <img class="img-svg" src="assets/geometric.svg" alt="Forma geométrica triangular">
+        <section id="inicio">
+            <div class="wrapper-apresentacao">
+                <div class="apresentacao">
+                    <p>
+                        Oi, eu sou <br><span class="inicio-nome">Zeus Moreira</span><br>
+                        <span class="inicio-cargo">Desenvolvedor Front-end</span>
+                    </p>
+                    <a href="https://www.linkedin.com/in/zeus-moreira/" target="_blank">Linkedin</a>
+                </div>
+                <picture>
+                    <source srcset="assets/imagem-cartunizada-m.png" media="(min-width: 600px)" />
+                    <img src="assets/imagem-cartunizada-p.png" alt="Imagem Zeus Moreira Cartunizado" />
+                </picture>
+            </div>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="wrapper-sobre">
+                <img src="assets/zeus.jpeg" alt="Imagem de avatar Zeus Moreira" class="avatar-img hidden">
+                <div class="sobre-mim-text hidden-right">
+                    Meu nome é Zeus Moreira e minha paixão pela computação começou desde muito cedo.
+                    Desde criança, sempre fui fascinado pelo mundo da tecnologia, e esse interesse me acompanhou ao
+                    longo dos anos.
+                    Em 2020, decidi transformar essa paixão em carreira ao ingressar na faculdade de Ciência da
+                    Computação.
+                    Desde então, venho me dedicando ao estudo e desenvolvimento de soluções tecnológicas.
+                    Com 2 anos de experiência na área, já participei de diversos projetos, sempre buscando aprimorar
+                    minhas habilidades e entregar resultados de qualidade.
+                    Estou constantemente aprendendo e explorando novas tecnologias, especialmente no desenvolvimento
+                    front-end, área que me motiva e desafia a cada dia.
+                </div>
+            </div>
+        </section>
+        <section id="habilidades">
+            <h2 class="hidden-top">Habilidades</h2>
+            <div class="wrapper-habilidades hidden">
+                <div id="prev-button" class="nav-button"></div>
+                <div class="icone-container">
+                    <img src="assets/html.png" alt="HTML5" class="icone habilidade-selecionada" data-habilidade="html5">
+                    <p>HTML5</p>
+                </div>
+                <div class="icone-container">
+                    <img src="assets/css.png" alt="CSS3" class="icone" data-habilidade="css3">
+                    <p>CSS3</p>
+                </div>
+                <div class="icone-container">
+                    <img src="assets/js.png" alt="JavaScript" class="icone" data-habilidade="javascript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="icone-container">
+                    <img src="assets/react.png" alt="react.js" class="icone" data-habilidade="reactjs">
+                    <p>React.js</p>
+                </div>
+                <div class="icone-container">
+                    <img src="assets/vue.png" alt="vue.js" class="icone" data-habilidade="vuejs">
+                    <p>Vue.js</p>
+                </div>
+                <div id="next-button" class="nav-button"></div>
+            </div>
+            <div class="descricao-habilidade">
+                <p id="descricao-html5">Experiência com HTML5, estruturação semântica de páginas web, boas práticas e acessibilidade.</p>
+                <p id="descricao-css3" class="descricao-oculta">Experiência com CSS3, design responsivo, flexbox e grid.</p>
+                <p id="descricao-javascript" class="descricao-oculta">Experiência com JavaScript, manipulação do DOM, ES6+ e desenvolvimento de aplicações dinâmicas.</p>
+                <p id="descricao-reactjs" class="descricao-oculta">Experiência com React.js, desenvolvimento de componentes, Hooks e consumo de APIs.</p>
+                <p id="descricao-vuejs" class="descricao-oculta">Experiência com Vue.js, desenvolvimento de componentes, Vuex e consumo de APIs.</p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
