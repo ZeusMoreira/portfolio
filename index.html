@@ -16,7 +16,7 @@
 
 <body>
     <div class="wrapper-container wrapper-container-dark positioned">
-        <header class="header container">
+        <header class="header">
             <a href="#inicio" class="logo">ZM</a>
             <nav class="header-nav">
                 <ul>
@@ -30,7 +30,7 @@
     </div>
     <main>
         <img class="img-svg" src="assets/geometric.svg" alt="Forma geométrica triangular">
-        <section id="inicio">
+        <section id="inicio" class="section-container">
             <div class="wrapper-apresentacao">
                 <div class="apresentacao">
                     <p>
@@ -45,7 +45,7 @@
                 </picture>
             </div>
         </section>
-        <section id="sobre">
+        <section id="sobre" class="section-container">
             <h2>Sobre Mim</h2>
             <div class="wrapper-sobre">
                 <img src="assets/zeus.jpeg" alt="Imagem de avatar Zeus Moreira" class="avatar-img hidden">
@@ -63,10 +63,10 @@
                 </div>
             </div>
         </section>
-        <section id="habilidades">
+        <section id="habilidades" class="section-container">
             <h2 class="hidden-top">Habilidades</h2>
             <div class="wrapper-habilidades hidden">
-                <div id="prev-button" class="nav-button"></div>
+                <div id="prev-button" class="nav-button btn"></div>
                 <div class="icone-container">
                     <img src="assets/html.png" alt="HTML5" class="icone habilidade-selecionada" data-habilidade="html5">
                     <p>HTML5</p>
@@ -87,7 +87,7 @@
                     <img src="assets/vue.png" alt="vue.js" class="icone" data-habilidade="vuejs">
                     <p>Vue.js</p>
                 </div>
-                <div id="next-button" class="nav-button"></div>
+                <div id="next-button" class="nav-button btn"></div>
             </div>
             <div class="descricao-habilidade">
                 <p id="descricao-html5">Experiência com HTML5, estruturação semântica de páginas web, boas práticas e
@@ -102,7 +102,7 @@
                     Vuex e consumo de APIs.</p>
             </div>
         </section>
-        <section id="projetos">
+        <section id="projetos" class="section-container">
             <h2 class="hidden-top">Projetos</h2>
             <div class="wrapper-projetos">
                 <div class="projeto primeira-linha"><span class="wave">Em construção...</span></div>
@@ -113,13 +113,69 @@
                 <div class="projeto segunda-linha"><span class="wave">Em construção...</span></div>
             </div>
             <div class="ver-mais-menos">
-                <div id="more-button" class="nav-button"></div>
+                <div id="more-button" class="nav-button btn"></div>
                 <span class="ver-mais">ver mais</span>
             </div>
             <a href="https://github.com/ZeusMoreira" target="_blank">Repositório GitHub</a>
         </section>
     </main>
-    <footer></footer>
+    <footer class="section-container">
+        <div class="icons">
+            <div class="icon">
+                <a href="mailto:zeus.moreira111@gmail.com" target="_blank">
+                    <div class="box">
+                        <img src="assets/email.png" alt="e-mail">
+                    </div>
+                </a>
+                <a href="mailto:zeus.moreira111@gmail.com" target="_blank">
+                    <p>E-mail</p>
+                </a>
+                <a href="mailto:zeus.moreira111@gmail.com" target="_blank">
+                    <p>zeus.moreira111@gmail.com</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://api.whatsapp.com/send?phone=5567998548898" target="_blank">
+                    <div class="box">
+                        <img src="assets/whatsapp.png" alt="telefone">
+                    </div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5567998548898" target="_blank">
+                    <p>Telefone</p>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5567998548898" target="_blank">
+                    <p>(67) 99854-8898</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/zeus-moreira/" target="_blank">
+                    <div class="box">
+                        <img src="assets/linkedin.png" alt="linkedin">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/zeus-moreira/" target="_blank">
+                    <p>Linkedin</p>
+                </a>
+                <a href="https://www.linkedin.com/in/zeus-moreira/" target="_blank">
+                    <p>@ZeusMoreira</p>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/ZeusMoreira" target="_blank">
+                    <div class="box">
+                        <img src="assets/github.png" alt="github">
+                    </div>
+                </a>
+                <a href="https://github.com/ZeusMoreira" target="_blank">
+                    <p>Github</p>
+                </a>
+                <a href="https://github.com/ZeusMoreira" target="_blank">
+                    <p>@ZeusMoreira</p>
+                </a>
+            </div>
+        </div>
+        <div> Ícones feitos por <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
 </body>
 
 </html>
