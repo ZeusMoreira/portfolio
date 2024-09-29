@@ -66,6 +66,7 @@ h3 {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: .6rem;
 }
 
