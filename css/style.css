@@ -9,7 +9,12 @@ html {
     font-weight: 400; */
     font: 400 62.5% 'Montserrat', sans-serif;
     scroll-behavior: smooth;
-    scroll-padding-top: 17.31rem;
+    scroll-padding-top: calc(11.90rem);
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 p,
@@ -148,7 +153,6 @@ h3 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    /* Transforma em um círculo */
     object-fit: cover;
 }
 
@@ -165,7 +169,6 @@ h3 {
 .wrapper-sobre p {
     display: flex;
 }
-
 
 .wrapper-sobre {
     display: flex;
@@ -277,8 +280,86 @@ h3 {
     cursor: pointer;
 }
 
-#prev-button:hover, #next-button:hover {
+#more-button {
+    height: 1px;
+    padding: 10px;
+    box-shadow: 2px -2px 0 1px var(--background-primary-color) inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(315deg);
+    cursor: pointer;
+}
+
+#prev-button:hover, #next-button:hover, #more-button:hover {
     box-shadow: 2px -2px 0 1px #ccc inset;
+}
+
+#projetos {
+    background-color: var(--primary-color);
+    padding: 8rem 0;
+    color: var(--background-primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.wrapper-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 40rem); /* 3 colunas de 200px cada */
+    grid-auto-rows: 30rem;
+    gap: 10rem;
+    justify-content: center;
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    background-color: var(--background-primary-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.segunda-linha {
+    display: none;
+}
+
+.ver-mais-menos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 1.5rem;
+}
+
+.ver-mais:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+
+#projetos a {
+    padding: 1.5rem;
+    border-radius: 6.2rem;
+    background-color: var(--background-primary-color);
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: letter-spacing 0.6s ease;
+}
+
+#projetos a:hover {
+    letter-spacing: 8px;
+}
+
+@media screen and (max-width: 1420px) {
+    .wrapper-projetos {
+        grid-template-columns: repeat(2, 40rem); /* 2 colunas de 30rem em telas médias */
+        grid-auto-rows: 30rem;
+        gap: 8rem;
+    }
 }
 
 @media screen and (max-width: 1060px) {
@@ -287,12 +368,42 @@ h3 {
     }
 
     .header {
+        padding: 0;
         gap: 4rem;
         justify-content: center;
     }
 
     .container {
         max-width: 50rem;
+    }
+}
+
+/* Define a animação para cada letra fazer o movimento de onda */
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.wave {
+    display: inline-block;
+    animation: wave 1.5s infinite;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper-projetos {
+        grid-template-columns: repeat(1, 40rem);
+        grid-auto-rows: 30rem; /* Ajusta a altura dos projetos para telas menores */
+        gap: 5rem;
     }
 }
 
@@ -307,6 +418,14 @@ h3 {
     }
 
     .wrapper-habilidades {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper-projetos {
+        grid-template-columns: repeat(1, 90%);
+        grid-auto-rows: 30rem; /* Ajusta a altura dos projetos para telas menores */
         gap: 5rem;
     }
 }

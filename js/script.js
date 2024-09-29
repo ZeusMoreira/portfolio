@@ -1,12 +1,23 @@
-// Função para revelar elementos ao rolar a página
+function getZoomLevel() {
+    const zoomLevel = Math.round((window.outerWidth / window.innerWidth) * 100);
+    return zoomLevel;
+}
+
 function reveal() {
+    const zoomLevel = getZoomLevel();
     const reveals = document.querySelectorAll('.hidden, .hidden-right, .hidden-top');
     const windowHeight = window.innerHeight;
     const elementVisible = 150;
+    
+    if (zoomLevel > 150) {
+        reveals.forEach(function (element) {
+            element.classList.add('show');
+        });
+        return;
+    }
 
     reveals.forEach(function (element) {
         const elementTop = element.getBoundingClientRect().top;
-
         if (elementTop < windowHeight - elementVisible) {
             element.classList.add('show');
         } else {
@@ -15,12 +26,11 @@ function reveal() {
     });
 }
 
-// Evento de scroll para revelar elementos
 window.addEventListener('scroll', reveal);
-reveal(); // Executa a função para mostrar os elementos inicialmente
+window.addEventListener('resize', reveal);
+reveal();
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleção unificada de elementos
     const icones = document.querySelectorAll('.icone');
     const iconeContainers = document.querySelectorAll('.icone-container');
     const descricoes = document.querySelectorAll('.descricao-habilidade p');
@@ -28,15 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextButton = document.getElementById('next-button');
     
     let currentIndex = 0;
-    let currentWidth = window.innerWidth; // Armazenar a largura da tela
+    let currentWidth = window.innerWidth; 
 
-    // Reseta a seleção dos ícones e descrições
     function resetarSelecao() {
         icones.forEach(icone => icone.classList.remove('habilidade-selecionada'));
         descricoes.forEach(descricao => descricao.classList.remove('mostrando'));
     }
 
-    // Seleciona a habilidade com base no índice
     function selecionarHabilidade(index) {
         resetarSelecao();
         const icone = iconeContainers[index].querySelector('.icone');
@@ -46,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById(`descricao-${habilidade}`).classList.add('mostrando');
     }
 
-    // Mostra a habilidade correspondente ao índice
     function mostrarHabilidade(index) {
         iconeContainers.forEach((container, idx) => {
             container.style.display = (idx === index || currentWidth > 830) ? 'block' : 'none';
@@ -54,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
         selecionarHabilidade(index);
     }
 
-    // Configura a navegação entre ícones
     function configurarNavegacao() {
         const isMobile = currentWidth <= 830;
         prevButton.style.display = isMobile ? "inline-block" : "none";
@@ -78,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Adiciona evento de clique aos ícones
     icones.forEach((icone, idx) => {
         icone.addEventListener('click', function () {
             currentIndex = idx;
@@ -86,15 +91,38 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Configuração inicial
     configurarNavegacao();
 
-    // Evento de resize da janela
     window.addEventListener('resize', function () {
         const newWidth = window.innerWidth;
         if (newWidth !== currentWidth) {
-            currentWidth = newWidth; // Atualiza a largura da tela
-            configurarNavegacao(); // Reconfigura a navegação
+            currentWidth = newWidth;
+            configurarNavegacao();
         }
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const moreButton = document.getElementById('more-button');
+    const verMaisSpan = document.querySelector('.ver-mais');
+    const segundaLinha = document.querySelectorAll('.segunda-linha');
+    let mostrandoMais = false;
+
+    function toggleMore() {
+        mostrandoMais = !mostrandoMais;
+
+        // Mostrar ou ocultar a segunda linha
+        segundaLinha.forEach(item => {
+            item.style.display = mostrandoMais ? 'flex' : 'none';
+        });
+
+        // Alterar o texto entre "ver mais" e "ver menos"
+        verMaisSpan.textContent = mostrandoMais ? 'ver menos' : 'ver mais';
+
+        // Rotacionar o ícone do botão
+        moreButton.style.transform = mostrandoMais ? 'rotate(135deg)' : 'rotate(315deg)';
+    }
+
+    moreButton.addEventListener('click', toggleMore);
+    verMaisSpan.addEventListener('click', toggleMore);
 });
