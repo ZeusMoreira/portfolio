@@ -9,7 +9,7 @@ function reveal() {
     const windowHeight = window.innerHeight;
     const elementVisible = 150;
 
-    if (zoomLevel > 150) {
+    if (zoomLevel > 150 || zoomLevel < 100) {
         reveals.forEach(function (element) {
             element.classList.add('show');
         });
@@ -28,7 +28,11 @@ function reveal() {
 
 window.addEventListener('scroll', reveal);
 window.addEventListener('resize', reveal);
-reveal();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    reveal();
+})
 
 document.addEventListener("DOMContentLoaded", function () {
     const icones = document.querySelectorAll('.icone');
@@ -122,4 +126,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     moreButton.addEventListener('click', toggleMore);
     verMaisSpan.addEventListener('click', toggleMore);
+
+    function updateURL(id) {
+        if (history.pushState) {
+            history.pushState(null, null, `#${id}`);
+        } else {
+            window.location.hash = id;
+        }
+    }
+
+    const sections = document.querySelectorAll('section');
+    const options = {
+        root: null,
+        threshold: 1 
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                updateURL(id); 
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });

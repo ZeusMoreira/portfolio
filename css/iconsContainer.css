@@ -7,12 +7,14 @@
 }
 
 .icons-container__icon {
-    width: 200px;
+    width: 208px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 0.2s
+    text-decoration: none;
+    transition: 0.2s;
+    gap: 1.5rem;
 }
 
 .icons-container__text {
@@ -24,7 +26,7 @@
 }
 
 .icons-container__icon:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .icons-container__link {
@@ -32,15 +34,7 @@
     width: fit-content;
 }
 
-.icons-container__link:first-child {
-    margin-bottom: 2rem
-}
-
-.icons-container__link:nth-child(2) {
-    margin-bottom: 1rem
-}
-
-.icons-container__link:last-child p {
+.icons-container__icon .icons-container__text:last-child {
     font-size: 1.6rem;
     font-weight: 500;
     color: #828282
@@ -57,10 +51,4 @@
 .icons-container__img {
     width: 3rem;
     padding: 1.5rem
-}
-
-@media screen and (max-width: 232px) {
-    .icons-container__icon:first-of-type .icons-container__link:nth-child(3) .icons-container__text {
-        font-size: 1.2rem !important;
-    }
 }
