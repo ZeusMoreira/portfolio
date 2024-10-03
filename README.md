@@ -14,6 +14,7 @@
 <ul>
   <li><strong>HTML5</strong>: Marcação semântica e acessível.</li>
   <li><strong>CSS3</strong>: Estilização modular e responsiva.</li>
+  <li><strong>SMACSS e BEM</strong>: Padrões que ajudam a estruturar o CSS de forma eficiente e escalável.</li>
   <li><strong>JavaScript (ES6+)</strong>: Funcionalidades interativas.</li>
   <li><strong>Git</strong>: Controle de versão.</li>
   <li><strong>Vercel</strong>: Hospedagem para demonstrações ao vivo.</li>
