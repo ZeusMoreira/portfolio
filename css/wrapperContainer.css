@@ -1,0 +1,17 @@
+.wrapper-container {
+    padding-top: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-container--dark {
+    background-color: var(--dark-color);
+    color: var(--background-primary-color);
+}
+
+.wrapper-container--positioned {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

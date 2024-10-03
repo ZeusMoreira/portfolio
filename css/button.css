@@ -1,0 +1,8 @@
+.btn {
+    height: 1px;
+    padding: 10px;
+    box-shadow: 2px -2px 0 1px var(--primary-color) inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    cursor: pointer;
+}

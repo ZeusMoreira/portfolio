@@ -1,0 +1,6 @@
+.icone {
+    width: 80px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}

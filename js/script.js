@@ -5,7 +5,7 @@ function getZoomLevel() {
 
 function reveal() {
     const zoomLevel = getZoomLevel();
-    const reveals = document.querySelectorAll('.hidden, .hidden-right, .hidden-top');
+    const reveals = document.querySelectorAll('.hidden, .hidden-top');
     const windowHeight = window.innerHeight;
     const elementVisible = 150;
     
@@ -32,10 +32,10 @@ reveal();
 
 document.addEventListener("DOMContentLoaded", function () {
     const icones = document.querySelectorAll('.icone');
-    const iconeContainers = document.querySelectorAll('.icone-container');
-    const descricoes = document.querySelectorAll('.descricao-habilidade p');
-    const prevButton = document.getElementById('prev-button');
-    const nextButton = document.getElementById('next-button');
+    const iconeContainers = document.querySelectorAll('.habilidades__icone-container');
+    const descricoes = document.querySelectorAll('.habilidades__descricao p');
+    const prevButton = document.querySelector('.habilidades__prev-button');
+    const nextButton = document.querySelector('.habilidades__next-button');
     
     let currentIndex = 0;
     let currentWidth = window.innerWidth; 
@@ -103,23 +103,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const moreButton = document.getElementById('more-button');
-    const verMaisSpan = document.querySelector('.ver-mais');
+    const moreButton = document.querySelector('.projetos__more-button');
+    const verMaisSpan = document.querySelector('.projetos__ver-mais');
     const segundaLinha = document.querySelectorAll('.segunda-linha');
     let mostrandoMais = false;
 
     function toggleMore() {
         mostrandoMais = !mostrandoMais;
 
-        // Mostrar ou ocultar a segunda linha
         segundaLinha.forEach(item => {
             item.style.display = mostrandoMais ? 'flex' : 'none';
         });
 
-        // Alterar o texto entre "ver mais" e "ver menos"
         verMaisSpan.textContent = mostrandoMais ? 'ver menos' : 'ver mais';
 
-        // Rotacionar o ícone do botão
         moreButton.style.transform = mostrandoMais ? 'rotate(135deg)' : 'rotate(315deg)';
     }
 
