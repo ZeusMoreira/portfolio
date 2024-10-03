@@ -116,7 +116,7 @@ h3 {
 .sobre-mim__text {
     width: 50%;
     text-align: left;
-    font-size: 2rem;  
+    font-size: 2rem;
     line-height: 1.5;
 }
 
@@ -153,14 +153,16 @@ h3 {
     transform: rotate(225deg);
 }
 
-.habilidades__prev-button:hover, .habilidades__next-button:hover, .projetos__ver-mais-menos .projetos__more-button:hover {
+.habilidades__prev-button:hover,
+.habilidades__next-button:hover,
+.projetos__ver-mais-menos .projetos__more-button:hover {
     box-shadow: 2px -2px 0 1px var(--selected-color) inset;
 }
 
 .habilidades__descricao {
     text-align: center;
     margin-top: 1.5rem;
-    font-size: 2rem;  
+    font-size: 2rem;
 }
 
 .habilidades__descricao p {
@@ -270,7 +272,7 @@ h3 {
 
 @media screen and (max-width: 1420px) {
     .projetos__wrapper {
-        grid-template-columns: repeat(2, 40rem); 
+        grid-template-columns: repeat(2, 40rem);
         grid-auto-rows: 30rem;
         gap: 8rem;
     }
@@ -289,7 +291,7 @@ h3 {
 @media screen and (max-width: 900px) {
     .projetos__wrapper {
         grid-template-columns: repeat(1, 40rem);
-        grid-auto-rows: 30rem; 
+        grid-auto-rows: 30rem;
         gap: 5rem;
     }
 }
@@ -389,5 +391,5 @@ h3 {
     .icon:first-of-type a:nth-child(3) p {
         font-size: 1.2rem !important;
     }
-    
+
 }

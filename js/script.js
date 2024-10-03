@@ -8,7 +8,7 @@ function reveal() {
     const reveals = document.querySelectorAll('.hidden, .hidden-top');
     const windowHeight = window.innerHeight;
     const elementVisible = 150;
-    
+
     if (zoomLevel > 150) {
         reveals.forEach(function (element) {
             element.classList.add('show');
@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const descricoes = document.querySelectorAll('.habilidades__descricao p');
     const prevButton = document.querySelector('.habilidades__prev-button');
     const nextButton = document.querySelector('.habilidades__next-button');
-    
+
     let currentIndex = 0;
-    let currentWidth = window.innerWidth; 
+    let currentWidth = window.innerWidth;
 
     function resetarSelecao() {
         icones.forEach(icone => icone.classList.remove('habilidade-selecionada'));
