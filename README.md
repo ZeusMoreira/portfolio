@@ -50,7 +50,6 @@
 
 <ul>
   <li>Adicionar mais projetos, incluindo aqueles desenvolvidos com novas tecnologias.</li>
-  <li>Implementar um blog para compartilhar conteúdo técnico.</li>
   <li>Continuar refinando a acessibilidade e a performance do site.</li>
 </ul>
 
