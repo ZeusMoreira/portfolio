@@ -13,13 +13,10 @@
 <h3>Tecnologias Utilizadas:</h3>
 <ul>
   <li><strong>HTML5</strong>: Marcação semântica e acessível.</li>
-  <li><strong>CSS3 (Sass/Stylus)</strong>: Estilização modular e responsiva.</li>
+  <li><strong>CSS3</strong>: Estilização modular e responsiva.</li>
   <li><strong>JavaScript (ES6+)</strong>: Funcionalidades interativas.</li>
-  <li><strong>Vue.js/React</strong>: Frameworks para construção de Single Page Applications (SPA).</li>
-  <li><strong>TypeScript</strong>: Superset do JavaScript para maior confiabilidade no desenvolvimento.</li>
-  <li><strong>Node.js</strong> (back-end de alguns projetos)</li>
   <li><strong>Git</strong>: Controle de versão.</li>
-  <li><strong>Netlify/Vercel</strong>: Hospedagem para demonstrações ao vivo.</li>
+  <li><strong>Vercel</strong>: Hospedagem para demonstrações ao vivo.</li>
 </ul>
 
 <hr>
