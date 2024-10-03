@@ -2,7 +2,7 @@
 
 <p>Este repositório contém o código-fonte do meu portfólio de desenvolvedor frontend, onde compartilho alguns dos meus projetos e habilidades. O objetivo é demonstrar minha experiência em desenvolvimento de interfaces modernas e responsivas, utilizando as melhores práticas de design e desenvolvimento.</p>
 
-<h2>🌐 <a href="https://meuportfolio.com" target="_blank">Acesse Meu Portfólio Online</a></h2>
+<h2>🌐 <a href="https://zeus-moreira.vercel.app" target="_blank">Acesse Meu Portfólio Online</a></h2>
 
 <hr>
 
