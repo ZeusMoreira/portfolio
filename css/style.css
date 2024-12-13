@@ -201,6 +201,23 @@ h3 {
     background-color: var(--background-primary-color);
     font-size: 1.8rem;
     font-weight: bold;
+    border-radius: 8px;
+}
+
+.projetos__projeto:hover {
+    scale: 1.05;
+}
+
+.projetos__projeto:nth-child(1) {
+    background-image: url('/assets/alura-plus.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projetos__projeto:nth-child(2) {
+    background-image: url('/assets/alura-books.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .segunda-linha {
