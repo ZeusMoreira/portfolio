@@ -2,7 +2,7 @@
 
 <p>Este repositório contém o código-fonte do meu portfólio de desenvolvedor frontend, onde compartilho alguns dos meus projetos e habilidades. O objetivo é demonstrar minha experiência em desenvolvimento de interfaces modernas e responsivas, utilizando as melhores práticas de design e desenvolvimento.</p>
 
-<h2>🌐 <a href="https://meuportfolio.com" target="_blank">Acesse Meu Portfólio Online</a></h2>
+<h2>🌐 <a href="https://zeus-moreira.vercel.app" target="_blank">Acesse Meu Portfólio Online</a></h2>
 
 <hr>
 
@@ -13,13 +13,11 @@
 <h3>Tecnologias Utilizadas:</h3>
 <ul>
   <li><strong>HTML5</strong>: Marcação semântica e acessível.</li>
-  <li><strong>CSS3 (Sass/Stylus)</strong>: Estilização modular e responsiva.</li>
+  <li><strong>CSS3</strong>: Estilização modular e responsiva.</li>
+  <li><strong>SMACSS e BEM</strong>: Padrões que ajudam a estruturar o CSS de forma eficiente e escalável.</li>
   <li><strong>JavaScript (ES6+)</strong>: Funcionalidades interativas.</li>
-  <li><strong>Vue.js/React</strong>: Frameworks para construção de Single Page Applications (SPA).</li>
-  <li><strong>TypeScript</strong>: Superset do JavaScript para maior confiabilidade no desenvolvimento.</li>
-  <li><strong>Node.js</strong> (back-end de alguns projetos)</li>
   <li><strong>Git</strong>: Controle de versão.</li>
-  <li><strong>Netlify/Vercel</strong>: Hospedagem para demonstrações ao vivo.</li>
+  <li><strong>Vercel</strong>: Hospedagem para demonstrações ao vivo.</li>
 </ul>
 
 <hr>
@@ -50,7 +48,6 @@
 
 <ul>
   <li>Adicionar mais projetos, incluindo aqueles desenvolvidos com novas tecnologias.</li>
-  <li>Implementar um blog para compartilhar conteúdo técnico.</li>
   <li>Continuar refinando a acessibilidade e a performance do site.</li>
 </ul>
 
