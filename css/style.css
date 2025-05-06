@@ -209,7 +209,7 @@ h3 {
 }
 
 .projetos__projeto:nth-child(1) {
-    background-image: url('/assets/alura-plus.jpeg');
+    background-image: url('/assets/alura-fokus.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -232,7 +232,14 @@ h3 {
     background-size: cover;
 }
 
-.segunda-linha {
+.projetos__projeto:nth-child(5) {
+    background-image: url('/assets/alura-plus.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.demais-linhas {
     display: none;
 }
 

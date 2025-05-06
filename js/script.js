@@ -109,13 +109,13 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const moreButton = document.querySelector('.projetos__more-button');
     const verMaisSpan = document.querySelector('.projetos__ver-mais');
-    const segundaLinha = document.querySelectorAll('.segunda-linha');
+    const demaisLinhas = document.querySelectorAll('.demais-linhas');
     let mostrandoMais = false;
 
     function toggleMore() {
         mostrandoMais = !mostrandoMais;
 
-        segundaLinha.forEach(item => {
+        demaisLinhas.forEach(item => {
             item.style.display = mostrandoMais ? 'flex' : 'none';
         });
 
